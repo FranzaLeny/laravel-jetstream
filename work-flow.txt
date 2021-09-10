@@ -1,0 +1,47 @@
+laravel new laravel-jetstream-
+composer require laravel/jetstream-
+php artisan storage:link-
+php artisan jetstream:install inertia-
+npm install && npm run dev-
+
+.....................
+database\migrations\2014_10_12_000000_create_users_table.php
+
+$table->string('role')->default('user');
+''''''''''''''''''''''''''''''
+
+php artisan migrate
+
+.editorconfig->[*.{js,vue,yml,yaml}]
+
+...............................
+webpack.mix.js->
+if (mix.inProduction()) {
+  mix.version();
+}
+mix.disableNotifications();
+'''''''''''''''''''''''''''''''
+
+........................
+config\jetstream.php:
+'features' => [
+        // Features::termsAndPrivacyPolicy(),
+        Features::profilePhotos(),
+        // Features::api(),
+        // Features::teams(['invitations' => true]),
+        Features::accountDeletion(),
+    ],
+'''''''''''''''''''''''''''''''
+
+.....................
+config\app.php:
+ locale' => 'id',
+'timezone' => 'Asia/Makassar',
+''''''''''''''''''''''''''''''
+
+
+
+
+
+
+
