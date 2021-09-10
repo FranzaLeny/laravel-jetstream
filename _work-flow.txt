@@ -39,6 +39,23 @@ config\app.php:
 'timezone' => 'Asia/Makassar',
 ''''''''''''''''''''''''''''''
 
+.....................
+npm run hot
+''''''''''''''''''''''''''''''
+
+
+#persiapan controller dan policy users
+php artisan make:controller UserController -r --model=User
+php artisan make:policy UserPolicy --model=User
+#seting route
+
+#buat page user menggunakan tailwind ui
+resources\js\Pages\User\Index.vue
+resources\js\Pages\User\Create.vue
+resources\js\Pages\User\Show.vue
+resources\js\Pages\User\Edit.vue
+resources\js\Components\Pagination.vue
+
 
 
 
